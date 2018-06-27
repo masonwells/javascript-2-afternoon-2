@@ -152,7 +152,16 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
+function finder (arr){
+  var mason = getRandomArbitrary()
+  
+  for (let i = 0; i < arr.length; i++){
+    if(arr[i]===mason){
+      return true
+    }
+  }
+  return false
+};
 
 
 
@@ -181,7 +190,23 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-//Code Here
+function removeItem(myGroceryList,item) {
+  for (var i = 0; i < myGroceryList.length; i++) {
+      if (myGroceryList[i] === item) {
+          myGroceryList.splice(i, 1);
+      }
+  }
+  return myGroceryList
+}
+arguments[0]
+
+function addItem(myGroceryList,item) {
+  myGroceryList.push(item);
+  return myGroceryList
+}
+
+addItem('Jerky')
+alert(myGroceryList);
 
 
 
